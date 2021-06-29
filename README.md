@@ -98,4 +98,19 @@ response code.
 Any other status code is understood as an error. The CEPS Merchant portal will try to notify your URL several times again 
 with some delay.
 
- 
+####5. Integrate a PLURA payment method into your website 
+
+Every payment request on your website will consist of
+
+* your wallet address
+* a unique payment id that identifies current order / transaction
+* an amount to be paid in atomic units - example you want a customer to pay 1499 PLURA. PluraCoin has 10 decimal places. An atomic value of 1499 PLURA is 14990000000000 (1499 + 10 decimal places).
+* payment decription - optional, url encoded, can contains spaces (useful for mobile wallets so user easily recognizes what he's paying for)
+
+Then compose the payment request like this example
+
+`pluracoin://Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9?amount=14990000000000&name=Sample%20payment&paymentid=f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402`
+
+and make it a clickable link (it opens the GUI or mobile wallet) or encode this string to QR code.
+
+When the customer pays based on these informations your system will be notified via payment notification URL (see chapter 3).
