@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+    <meta name="description" content="" />
+    <meta name="author" content="" />
+    <title>PLURA - Sample e-shop</title>
+    <!-- Favicon-->
+    <link rel="icon" type="image/x-icon" href="assets/favicon.ico" />
+    <!-- Bootstrap icons-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css" rel="stylesheet" />
+    <!-- Core theme CSS (includes Bootstrap)-->
+    <link href="css/styles.css" rel="stylesheet" />
+    <script src="https://cdn.rawgit.com/davidshimjs/qrcodejs/gh-pages/qrcode.min.js"></script>
+</head>
+<body>
+<!-- Navigation-->
+<nav class="navbar navbar-expand-lg navbar-light bg-light">
+    <div class="container px-4 px-lg-5">
+        <a class="navbar-brand" href="#!"><img src="/dist/img/pluracoin-32x32.png"> PLURA Sample e-shop</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0 ms-lg-4">
+                <li class="nav-item"><a class="nav-link active" aria-current="page" href="#!">Home</a></li>
+                <li class="nav-item"><a class="nav-link" href="#!">About</a></li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" id="navbarDropdown" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Shop</a>
+                    <ul class="dropdown-menu" aria-labelledby="navbarDropdown">
+                        <li><a class="dropdown-item" href="#!">All Products</a></li>
+                        <li><hr class="dropdown-divider" /></li>
+                        <li><a class="dropdown-item" href="#!">Popular Items</a></li>
+                        <li><a class="dropdown-item" href="#!">New Arrivals</a></li>
+                    </ul>
+                </li>
+            </ul>
+            <form class="d-flex">
+
+            </form>
+        </div>
+    </div>
+</nav>
+<!-- Product section-->
+<section class="py-5">
+    <div class="container px-4 px-lg-5 my-5">
+        <div class="row gx-4 gx-lg-5 align-items-center">
+            <div class="col-md-4">
+
+                <div id="qrcode"></div>
+                <script type="text/javascript">
+                    new QRCode(document.getElementById("qrcode"), "pluracoin://Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9?amount=14990000000000&name=Sample%20payment&paymentid=f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402");
+                </script>
+
+                <p>&nbsp;</p>
+
+                <p><a href="pluracoin://Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9?amount=14990000000000&name=Sample%20payment&paymentid=f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402" class="btn btn-outline-dark flex-shrink-0">Pay 1499.00 PLURA</a></p>
+                <p>or</p>
+                <p><button type="button" class="btn btn-outline-dark flex-shrink-0" id="manualpay_button">Show payment details</button></p>
+
+            </div>
+            <div class="col-md-8">
+                <h1 class="display-5 fw-bolder">Thank you for your order!</h1>
+
+                <p>Please pay 1499.00 PLURA with your PluraCoin wallet.</p>
+                <p>Scan the QR code with PLURA mobile app or click on this link to pay with desktop wallet.</p>
+                <p>&nbsp;</p>
+
+                <p class="lead">Order Summary</p>
+
+                <p>
+                    <table class="table">
+                    <thead>
+                        <tr>
+                            <th>#</th>
+                            <th>Product name</th>
+                            <th>Pcs</th>
+                            <th>Subtotal</th>
+                        </tr>
+                    </thead>
+                    <tr>
+                        <td>1.</td>
+                        <td>Sample Item</td>
+                        <td>1</td>
+                        <td>1499.00 PLURA</td>
+                    </tr>
+                    <tr style="font-weight: bold">
+                        <td colspan="3" style="text-align: right;">TOTAL</td>
+                        <td>1499.00 PLURA</td>
+                    </tr>
+                </table>
+
+
+                </p>
+
+                <div id="manualpay" class="rc" style="display:none;background-color: #F0F8FF">
+                    <table class="table">
+                        <tr>
+                            <td>Amount to pay:</td>
+                            <td>1499.00 PLURA</td>
+                        </tr>
+                        <tr>
+                            <td>Wallet address:</td>
+                            <td>Pv7gU9dRVKFg8y1Y3YBLzQJm3owZwhfr8aTS3JaZsJBPa6sZzzDeSE8<br>SHiKsta4MYQWpEg8ok27ufUmoaSKu9L5c2WAgwj5G9</td>
+                        </tr>
+                        <tr>
+                            <td>Payment ID:</td>
+                            <td>f13adc8ac78eb22ffcee3f82e0e9ffb251dc7dc0600ef599087a89b623ca1402</td>
+                        </tr>
+
+                    </table>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Footer-->
+<footer class="py-5 bg-dark">
+    <div class="container"><p class="m-0 text-center text-white">Copyright &copy; PluraCoin 2021</p></div>
+</footer>
+
+<!-- Bootstrap core JS-->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.1/dist/js/bootstrap.bundle.min.js"></script>
+<!-- Core theme JS-->
+
+<script>
+    $(document).ready(function() {
+        $('#manualpay_button').click(function () {
+            $('#manualpay').toggle();
+        });
+    });
+</script>
+
+</body>
+</html>
+
