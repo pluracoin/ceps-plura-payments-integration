@@ -1,7 +1,7 @@
 # ceps-plura-payments-integration
 Tutorial on how to integrate PLURA e-commerce payment system (CEPS)
 
-####1. Get your wallet
+#### 1. Get your wallet
 Download any of these wallets (they're all compatible) and create a new wallet/address. Note
     your mnemonic seed.
 To register your store or website on this portal you need your **public wallet address**
@@ -10,7 +10,7 @@ To register your store or website on this portal you need your **public wallet a
 Wallet address is shown automatically when a wallet is launched. Private view key can be
     shown e.g. in desktop (GUI) wallet in menu Wallet > Export private key > copy View Secret Key.
 
-####2. Register your store / website
+#### 2. Register your store / website
 
 Create a free account on CEPS Merchant portal (only valid email and password required).
 
@@ -44,7 +44,7 @@ have an incoming transactions we'll check/wait until the required number of conf
 confirmations is equal or above the defined treshold (e.g. 5) then we'll call this URL to notify your website about incoming 
 payment.
 
-####3. Define payment notification URL
+#### 3. Define payment notification URL
 
 If you are going to use some of our e-commerce plugins like payment gateway for VirtueMart, Prestashop then this URL will 
 be given to you by the plugin. Just simply copy/paste there the *Callback URL* from plugin. 
@@ -85,7 +85,7 @@ This identifies your exact payment/order. Example: `8d3c07377fdc6d6857fc01d6b04e
 &api_key=gvq46imIzG8Y1WNP1mFjUSfk8wjJVrtmpdYUlhJYwmyKL9EPA2soZK98fKpxFjbRUcGQIikPhxi6yAawYFDdjWaCli2F6YSGKKhFFcmAUPBaU38kHw30ApZAY1sGnarf`
 
 
-####4. Define HTTP response code
+#### 4. Define HTTP response code
 This is required only in case o custom integration. E-commerce plugins users can safely ignore this.
 
 #############
@@ -98,7 +98,7 @@ response code.
 Any other status code is understood as an error. The CEPS Merchant portal will try to notify your URL several times again 
 with some delay.
 
-####5. Integrate a PLURA payment method into your website 
+#### 5. Integrate a PLURA payment method into your website 
 
 Every payment request on your website will consist of
 
